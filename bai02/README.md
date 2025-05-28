@@ -63,7 +63,8 @@ Hiển thị các cách đặt 8 quân hậuhậu.
 ### 3. Sử dụng PageView để render các cách lên màn hình
 ## 🖼️ Demo
 
-![](/assets/image/anh1.png) ![](/assets/image/anh2.png)
+![Image](https://github.com/user-attachments/assets/1a6e31c6-2670-4bb9-b75d-61dbf6d101aa)
+![Image](https://github.com/user-attachments/assets/392c023c-e267-4094-ac65-129dbe210351)
 
 
 
