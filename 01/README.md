@@ -23,7 +23,7 @@ Hãy vẽ một bàn cờ vua có kích thước 8 x 8 ô.
 - Hàm `place_queen(int row, int col)` cập nhật vị trí 
 ## 🖼️ Demo
 
-![](/assets/image/image.png)
+![Image](https://github.com/user-attachments/assets/a947e8ff-9420-4886-a289-0d94def47801)
 
 
 
