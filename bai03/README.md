@@ -54,5 +54,5 @@ Thay vì viết thuật toán 8 quân hậu bằng Dart, ta sẽ:
 
 #### Truy cập example/lib/ để xem code UI flutter
 ## 🖼️ Demo
+![Image](https://github.com/user-attachments/assets/18de6ef4-0074-4f46-8bc6-d3d47ee9cf4b)
 
-[https://github.com/user-attachments/assets/5b740314-42da-4d3c-ae72-80bb41595a7b](https://github.com/user-attachments/assets/382e768d-3533-4f66-8f7f-ac9ecabddeb7)
