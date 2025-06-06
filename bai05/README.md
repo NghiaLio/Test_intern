@@ -83,6 +83,7 @@ class TrianglePainter extends CustomPainter {
 ## 🖼 Demo
 
 https://github.com/user-attachments/assets/a9995583-1281-440c-a7fa-6407688ac0d8
+
 ---
 
 ## 💡 Phần tâm đắc
