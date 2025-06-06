@@ -115,6 +115,7 @@ https://github.com/user-attachments/assets/0b2d6504-c653-4f24-a78c-aa87eb7de107
 
 ---
 ## 📂 Cấu trúc thư mục
+```css
 bai02/
 ├── lib/
 │ ├── main.dart # App chính
@@ -124,6 +125,7 @@ bai02/
 ├── assets/
 │ └── icon # Icon quân hậu
 └── README.md
+```
 
 
 
