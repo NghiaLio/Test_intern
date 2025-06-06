@@ -222,7 +222,9 @@ void selectionSort() async {
 ```
 
 ### 5. 🎬 Video minh họa
-https://github.com/user-attachments/assets/0dd0ce10-4167-49ed-8ff4-57bd838f3b9b
+
+[https://github.com/user-attachments/assets/0dd0ce10-4167-49ed-8ff4-57bd838f3b9b](https://github.com/user-attachments/assets/8c920beb-3312-4f61-8790-0dd1fb0a4cc2)
+
 ---
 ## 🤔 Nhận xét cá nhân
 Cách trên mô tả được phần nào thuật toán `SelectionSort` nhưng vẫn chưa mô tả đúng về từng bước:
