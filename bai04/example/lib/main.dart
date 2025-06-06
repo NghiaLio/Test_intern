@@ -1,3 +1,4 @@
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -17,9 +18,15 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int? sortSteps;
-  List<int> data1 = [50, 30, 80, 60, 20];
-  List<int> data2 = [100, 60, 85, 20, 40,30,10,75];
-  List<Color> colorOfColumns1 = List.generate(10, (index) => Colors.grey);
+  List<int> data1 = List.generate(15, (index) {
+    final numRan = Random().nextInt(100);
+    if (numRan < 10) {
+      return numRan * 10; // Ensure no zero values
+    }
+    return numRan;
+  });
+  List<int> data2 = [100, 60, 85, 20, 40, 30, 10, 75];
+  List<Color> colorOfColumns1 = List.generate(15, (index) => Colors.grey);
   List<Color> colorOfColumns2 = List.generate(10, (index) => Colors.grey);
   List<List<int>> sortedData1 = [];
   List<List<int>> sortedData2 = [];
@@ -45,7 +52,7 @@ class _MyAppState extends State<MyApp> {
       setState(() {
         colorOfColumns1[currentIndex1] = Colors.blue;
       });
-      await Future.delayed(const Duration(milliseconds: 100));
+      await Future.delayed(const Duration(milliseconds: 150));
       for (int j = currentIndex1 + 1; j < data1.length; j++) {
         setState(() {
           colorOfColumns1[j] = Colors.red;
@@ -53,18 +60,20 @@ class _MyAppState extends State<MyApp> {
             colorOfColumns1[j - 1] = Colors.grey;
           }
         });
-        await Future.delayed(const Duration(milliseconds: 100));
+        await Future.delayed(const Duration(milliseconds: 150));
         if (data1[j] == sortedData1[i][currentIndex1]) {
           setState(() {
             colorOfColumns1[j] = Colors.blue;
             colorOfColumns1[currentIndex1] = Colors.grey;
           });
-          await Future.delayed(const Duration(milliseconds: 100));
+          await Future.delayed(const Duration(milliseconds: 150));
         }
+
         setState(() {
           colorOfColumns1[j] = Colors.grey;
         });
-        await Future.delayed(const Duration(milliseconds: 100));
+
+        await Future.delayed(const Duration(milliseconds: 150));
       }
       setState(() {
         data1 = sortedData1[i];
@@ -78,7 +87,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   int i = 0;
-  void _playAnimation() {
+  void _playAnimation() async{
     while (i < sortSteps!) {
       setState(() {
         data2 = sortedData2[i];
@@ -86,6 +95,7 @@ class _MyAppState extends State<MyApp> {
         i++;
         currentIndex2++;
       });
+      await Future.delayed(const Duration(milliseconds: 1000));
     }
   }
 
@@ -158,7 +168,7 @@ class _MyAppState extends State<MyApp> {
       key: key,
       padding: const EdgeInsets.symmetric(horizontal: 2.0),
       child: SizedBox(
-        height: 200,
+        // height: 200,
         width: 20,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,

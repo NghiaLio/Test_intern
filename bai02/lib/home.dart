@@ -18,7 +18,7 @@ class _homeState extends State<home> {
   List<int> d2 = List.filled(17, 1); // d2[i + j - 2] ∈ 0..16
 
   final List<List<Map<String, int>>> results = [];
-  List<Map<String, int>>? queensPiece() {
+ void queensPiece() {
     final List<Map<String, int>> queens = [];
     for (int i = 1; i <= 8; i++) {
       queens.add({'row': i, 'col': X[i]});
