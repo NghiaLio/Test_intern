@@ -70,7 +70,8 @@ ffigen_app
 - Tại thư mục chủ vừa tạo `ffigen_app` di chuyển tới thư mục `example` bằng lệnh `cd exmaple`
 - Tại `example` chạy lệnh `flutter run`
 - Bạn sẽ thấy một cửa sổ ứng dụng đang chạy như sau:
-    ![Image](https://github.com/user-attachments/assets/945cb2fb-3394-4217-9083-acdf482c076e)
+
+  ![Image](https://github.com/user-attachments/assets/945cb2fb-3394-4217-9083-acdf482c076e)
 
 ---
 
